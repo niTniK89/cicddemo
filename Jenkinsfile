@@ -4,7 +4,13 @@ pipeline
 	stages{
 		stage('Build Application'){
 		steps{
-		bat 'mvn clean install'
+		bat 'mvn package -DskipTests'
+		}
+		}
+		
+		stage('MUnit Test Application'){
+		steps{
+		bat 'mvn test'
 		}
 		}
 		
