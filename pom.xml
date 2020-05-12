@@ -32,7 +32,7 @@
 				<username>ibm-19april</username>
 				<password>Nike@012</password>
 				<environment>Sandbox</environment>
-				<applicationName>cicddemo</applicationName>
+				<applicationName>cicdedemo</applicationName>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
 				</cloudHubDeployment>

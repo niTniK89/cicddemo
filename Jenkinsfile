@@ -13,5 +13,11 @@ pipeline
 		bat 'mvn package deploy -DmuleDeploy'
 		}
 		}
+		
+		stage('Perform Regression Testing'){
+		steps{
+		bat 'C:\\Users\\NitishJain\\AppData\\Roaming\\npm\\newman run C:\\nik\\newman\\test_coll12may.postman_collection.json -r htmlextra --reporter-htmlextra-export C:\\nik\\newman'
+		}
+		}
 }
 }
